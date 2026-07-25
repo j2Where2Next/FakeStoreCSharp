@@ -1,0 +1,5 @@
+{
+    "appService.preDeployTask": "publish-release",
+    "appService.deploySubpath": "bin\\Release\\net8.0\\publish",
+    "appService.defaultWebAppToDeploy": "/subscriptions/dce1031e-33b3-46b7-87ff-4341ef8beb8a/resourceGroups/rg-fakestore/providers/Microsoft.Web/sites/fakestore-charp-api"
+}
