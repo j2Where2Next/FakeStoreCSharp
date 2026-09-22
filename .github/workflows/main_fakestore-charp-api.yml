@@ -27,7 +27,7 @@ jobs:
         run: dotnet restore FakeStoreMimic.csproj
       
       - name: Build with dotnet
-        run: dotnet build FakeStoreMimic.csproj -c Release --no-restore
+        run: dotnet build FakeStoreMimic.csproj -c Release
 
       - name: dotnet publish
         run: dotnet publish FakeStoreMimic.csproj -c Release -o ${{env.DOTNET_ROOT}}/myapp
