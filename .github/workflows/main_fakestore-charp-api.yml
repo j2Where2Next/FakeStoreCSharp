@@ -24,13 +24,13 @@ jobs:
           dotnet-version: '8.x'
             
       - name: Restore dependencies
-        run: dotnet restore FakeStoreCSharp/FakeStoreMimic.csproj
+        run: dotnet restore FakeStoreMimic.csproj
       
       - name: Build with dotnet
-        run: dotnet build FakeStoreCSharp/FakeStoreMimic.csproj -c Release --no-restore
+        run: dotnet build FakeStoreMimic.csproj -c Release --no-restore
 
       - name: dotnet publish
-        run: dotnet publish FakeStoreCSharp/FakeStoreMimic.csproj -c Release -o ${{env.DOTNET_ROOT}}/myapp
+        run: dotnet publish FakeStoreMimic.csproj -c Release -o ${{env.DOTNET_ROOT}}/myapp
 
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v4
