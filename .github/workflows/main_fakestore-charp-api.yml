@@ -22,6 +22,9 @@ jobs:
         uses: actions/setup-dotnet@v4
         with:
           dotnet-version: '8.x'
+      
+      - name: List files in repository
+        run: dir /s /b *.csproj
 
       - name: Restore dependencies
         run: dotnet restore FakeStoreMimic/FakeStoreMimic.csproj
