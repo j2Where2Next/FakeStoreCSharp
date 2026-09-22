@@ -14,5 +14,6 @@ public record GetProductsResponse(
 
 public record ProductRating(
     [property: JsonPropertyName("rate")] double Rate,
-    [property: JsonPropertyName("count")] int Count
+    [property: JsonPropertyName("count")] int Count,
+    [property: JsonPropertyName("basis")] string Id
 );
